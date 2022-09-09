@@ -21,6 +21,7 @@ import ResetPassword from './pages/account/ResetPassword';
 // Components
 import Header from './components/Header';
 import Footer from './components/Footer';
+import MenuItem from './components/MenuItem';
 
 function App() {
 
@@ -52,6 +53,7 @@ function App() {
     <>
       <Router>
         <Header authUser={authUser} />
+        <MenuItem/>
         <Routes>
           {/* Public Route */}
           <Route path='/' element={<Landing />} />
